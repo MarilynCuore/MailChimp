@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
+body *::-moz-selection {
+  background: rgba(255, 113, 208, 0.2);
+  color: #241c15;
+}
+body *::selection {
+  background: rgba(255, 113, 208, 0.2);
+  color: #241c15;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.container-min {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.float {
+  z-index: 22;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  width: 100%;
+  background: white;
+  border-bottom: solid 1px #e6e6e6;
+  height: 5rem;
+}
+
+.float ul li a {
+  color: black;
+}
+
+header nav {
+  width: 100%;
+  background: transparent;
+  position: fixed;
+}
+
+header nav .menu-principal {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .menu-principal ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .menu-principal ul:nth-of-type(2) li:nth-of-type(2) a {
+  font-size: 20px;
+}
+
+header nav .menu-principal ul li {
+  list-style: none;
+  padding-right: 3.125rem;
+}
+
+header nav .menu-principal ul li:nth-of-type(3) a {
+  position: relative;
+}
+
+header nav .menu-principal ul li:nth-of-type(3) a:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  display: inline-block;
+  color: black;
+  padding-left: 0.62rem;
+  position: absolute;
+  font-weight: 900;
+}
+
+header nav .menu-principal ul li:nth-of-type(5) a {
+  position: relative;
+}
+
+header nav .menu-principal ul li:nth-of-type(5) a:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  display: inline-block;
+  color: black;
+  padding-left: 0.62rem;
+  position: absolute;
+  font-weight: 900;
+}
+
+header nav .menu-principal ul li a {
+  text-decoration: none;
+  color: #241c15;
+  font-family: "Open Sans", sans-serif;
+}
+
+header nav .menu-principal ul li a img {
+  width: 178px;
+}
+
+header nav .menu-principal ul li a div {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #dbd9d2;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: inset 0 0 0 0.0625rem #706b66;
+          box-shadow: inset 0 0 0 0.0625rem #706b66;
+  text-align: center;
+  font-size: 20px;
+}
+
+.pricings {
+  background-color: #d8eacc;
+  width: 100vw;
+}
+
+.pricings .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.pricings .main .text h1 {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1.875rem;
+  font-size: 4.625rem;
+  color: #241c15;
+  font-weight: bold;
+}
+
+.pricings .main .text p {
+  margin-top: 1.875rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #241c15;
+  line-height: 1.3;
+  font-weight: 300;
+}
+
+.pricings .main .img {
+  padding-left: 3.75rem;
+}
+
+.pricings .main .img img {
+  width: 354px;
+}
+
+.pricings .table-wrapper {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  color: #241c15;
+  line-height: 1.35;
+}
+
+.pricings .table-wrapper table {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.pricings .table-wrapper table tbody tr:nth-of-type(2) td:nth-of-type(4) .start {
+  visibility: hidden;
+}
+
+.pricings .table-wrapper table tbody tr:nth-of-type(2) td:nth-of-type(4) .month {
+  visibility: hidden;
+}
+
+.pricings .table-wrapper table tbody tr:nth-of-type(2) td:nth-of-type(4) .calculate {
+  visibility: hidden;
+}
+
+.pricings .table-wrapper table tbody tr th {
+  padding-left: 1.875rem;
+  padding-top: 3.125rem;
+  padding-right: 3rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 3rem;
+  vertical-align: top;
+}
+
+.pricings .table-wrapper table tbody tr td {
+  vertical-align: top;
+  padding: 1.875rem;
+  padding-top: 3.125rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.pricings .table-wrapper table tbody tr td:nth-of-type(2) {
+  background-color: rgba(197, 219, 242, 0.3);
+  position: relative;
+}
+
+.pricings .table-wrapper table tbody tr td:nth-of-type(2) .recommends {
+  color: white;
+  top: -41px;
+  background-color: #ff3ebf;
+  border-top-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
+  left: 0;
+  padding: 0.625rem;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+.pricings .table-wrapper table tbody tr td:nth-of-type(4) {
+  position: relative;
+}
+
+.pricings .table-wrapper table tbody tr td:nth-of-type(4) select {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #007c89;
+}
+
+.pricings .table-wrapper table tbody tr td .title-pricing {
+  font-size: 2rem;
+  letter-spacing: 0;
+}
+
+.pricings .table-wrapper table tbody tr td p {
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.pricings .table-wrapper table tbody tr td .start {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.pricings .table-wrapper table tbody tr td .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.pricings .table-wrapper table tbody tr td .price div {
+  font-size: 3rem;
+  line-height: 2.4rem;
+}
+
+.pricings .table-wrapper table tbody tr td .price div small {
+  font-size: 1.5rem;
+}
+
+.pricings .table-wrapper table tbody tr td .price div small:nth-of-type(1) {
+  padding-right: 0.15rem;
+}
+
+.pricings .table-wrapper table tbody tr td .price div small:nth-of-type(2) {
+  padding-left: 0.3rem;
+}
+
+.pricings .table-wrapper table tbody tr td .month {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.pricings .table-wrapper table tbody tr td .actions {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.pricings .table-wrapper table tbody tr td .actions a {
+  background-color: #007c89;
+  color: white;
+  font-weight: bold;
+  padding: 0.8125rem;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.pricings .table-wrapper table tbody tr td .calculate {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.pricings .table-wrapper table tbody tr td .calculate a {
+  color: #007c89;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+.pricings .table-wrapper table tbody tr td .calculate a:hover {
+  text-decoration: underline;
+}
+
+.pricings .table-wrapper table tbody tr td ul {
+  list-style: none;
+}
+
+.pricings .table-wrapper table tbody tr td ul li {
+  margin-bottom: 0.625rem;
+  font-size: 0.9rem;
+}
+
+.pricings .table-wrapper table tbody tr td ul li:first-child {
+  font-weight: bold;
+}
+
+.pricing-grid .table-pricing-grid {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #241c15;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.pricing-grid .table-pricing-grid tr th {
+  padding-bottom: 1.25rem;
+  padding-left: 1.875rem;
+  padding-top: 1.25rem;
+  text-align: left;
+  width: 20%;
+  padding-right: 0.625rem;
+  font-size: 0.9375rem;
+}
+
+.pricing-grid .table-pricing-grid tr th div a {
+  color: #007c89;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding-left: 0;
+  padding-right: 0;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.pricing-grid .table-pricing-grid tr th div a:hover {
+  text-decoration: underline;
+}
+
+.pricing-grid .table-pricing-grid tr:first-child th {
+  border-bottom: 0.0625rem solid #241c15;
+  border-top: 0.0625rem solid #241c15;
+  text-transform: uppercase;
+  padding-left: 3rem;
+  font-weight: bold;
+}
+
+.pricing-grid .table-pricing-grid td {
+  padding-left: 1rem;
+}
+
+.pricing-grid .table-pricing-grid td:nth-of-type(2) {
+  background-color: rgba(197, 219, 242, 0.3);
+}
+
+.pricing-grid .table-pricing-grid td div i.fa-check {
+  color: #007c89;
+}
+
+.pricing-grid .table-pricing-grid td div i.fa-times {
+  color: #dcd9d2;
+}
+/*# sourceMappingURL=style.css.map */

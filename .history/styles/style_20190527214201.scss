@@ -1,0 +1,24 @@
+header {
+  max-width: 90%;
+  margin: 0 auto;
+  nav {
+    .menu-principal {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          list-style: none;
+          padding-right: 3.125rem;
+          a {
+            text-decoration: none;
+            img {
+              width: 178px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

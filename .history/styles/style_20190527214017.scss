@@ -1,0 +1,19 @@
+header {
+  max-width: 90%;
+  margin: 0 auto;
+  nav {
+    .principal-nav {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
